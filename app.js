@@ -10,9 +10,9 @@ let newsItemsLI = news.articles.map(function(newsItem){
     }
   
     return `
-  <li><h4 class="newsItemTitle"> <a href="${newsItem.url}">${newsItem.title}</a></h4>
+  <li><h4 class="newsItemTitle"> <a href="${newsItem.title}"</a></h4>
   <label class="newsItemAuthor">By: ${newsItem.author}</label>
-  <div class="newsItemStory"></div>
+  <div class="newsItemStory">${newsItem.url}</div>
     <divclass"newsItemPic>${img}</div>
     <p class="newsItemDescription">${newsItem.description}</p>
     <p class="newsItemPublish">${newsItem.publishedAt}</p></li>`

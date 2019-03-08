@@ -1,0 +1,19 @@
+
+<html>
+<head></head>
+
+<body>
+  <h1>Form Validation</h1>
+
+<form id="registerForm">
+  <input type="text" required />
+  <input type="email" placeholder="Enter email" required />
+  <input type="text" id="ssnTextBox" placeholder="Enter SSN" pattern = "^\d{3}-\d{2}-\d{4}$" required />
+
+  <button id="btnRegister">Submit</button>
+</form>
+
+</body>
+
+<script src="app.js"></script>
+</html>
